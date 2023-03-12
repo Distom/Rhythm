@@ -293,6 +293,7 @@ input[type=submit]:focus-visible,
   background: #FF6428;
   border-radius: 40px;
   margin-right: 10px;
+  transition: opacity 0.1s;
 }
 .guitars__button:hover, .guitars__button:focus-visible {
   opacity: 0.8;
@@ -778,7 +779,7 @@ input[type=submit]:focus-visible,
 .favourite__button-image {
   transition: opacity 0.1s;
 }
-.favourite__button-image:hover, .favourite__button-image:focus-visible {
+.favourite__google-play:hover .favourite__button-image, .favourite__google-play:focus-visible .favourite__button-image, .favourite__app-store:hover .favourite__button-image, .favourite__app-store:focus-visible .favourite__button-image {
   opacity: 0.8;
 }
 .favourite__illustration {
@@ -932,6 +933,9 @@ input[type=submit]:focus-visible,
 }
 .footer__social-media a:not(:last-child) {
   margin-right: 24px;
+}
+.footer__media-icon-link {
+  display: inline-block;
 }
 .footer__copyright {
   text-align: center;

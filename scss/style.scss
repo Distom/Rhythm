@@ -222,6 +222,7 @@ input[type=submit]:focus-visible,
 		background: #FF6428;
 		border-radius: 40px;
 		margin-right: 10px;
+		transition: opacity 0.1s;
 
 		&:hover,
 		&:focus-visible {
@@ -792,16 +793,19 @@ input[type=submit]:focus-visible,
 
 	&__button-image {
 		transition: opacity 0.1s;
+	}
+
+	&__google-play,
+	&__app-store {
 
 		&:hover,
 		&:focus-visible {
-			opacity: 0.8;
+			.favourite__button-image {
+				opacity: 0.8;
+			}
+
 		}
 	}
-
-	&__google-play {}
-
-	&__app-store {}
 
 	&__illustration {
 		flex: 0 1 calc(50% - 18px);
@@ -975,6 +979,10 @@ input[type=submit]:focus-visible,
 		a:not(:last-child) {
 			margin-right: 24px;
 		}
+	}
+
+	&__media-icon-link {
+		display: inline-block;
 	}
 
 	&__copyright {
